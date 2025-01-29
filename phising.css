@@ -1,0 +1,325 @@
+body{
+    font-family: 'GothamPro', "Builder Sans", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    background-color: #232527;
+    box-sizing: border-box;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 38px;
+    background-color: rgb(25, 27, 29);
+    border-bottom: black solid 1px;
+    text-align: center;
+    position: fixed;
+    z-index: 1000;
+}
+.menu #icon{
+    width: 38px;
+    height: 40px;
+    margin: 0 5px;
+}
+.menu #icon #icon-nav-header{
+    width: 34px;
+    height: 40px;
+}
+.menu #icon #icon-nav-header .navbar-link{
+    padding: 5px 0;
+    margin-left: 4px;
+}
+.menu #icon #icon-nav-header .navbar-link img{
+    height: 30px;
+    width: 30px;
+    margin-top: 5px;
+}
+.menu #c-text-menu{
+    height: 100%;
+}
+.menu #c-text-menu #text-menu{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.menu #c-text-menu #text-menu .list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3px;
+    color: #fff;
+    transform: scaleX(0.99);
+    font-weight: 550;
+}
+.menu #c-text-menu #text-menu #list1{
+    width: 140.44px;
+    height: 100%;
+}
+.menu #c-text-menu #text-menu #list2{
+    width: 120.36px;
+    height: 100%;
+}
+.menu #c-text-menu #text-menu #list3{
+    width: 94.98px;
+    height: 100%;
+}
+.menu #c-text-menu #text-menu #list4{
+    width: 101.72px;
+    height: 100%;
+}
+.menu #navegacion{
+    display: flex;
+    
+}
+.menu #navegacion #buscador{
+    width: 337.250px;
+    height: 28px;
+    padding: 5px 30px 5px 33px;
+    border: 0.5px solid rgb(92, 93, 93);
+    background-color: rgba(0, 0, 0, .7);
+    border-radius: 8px;
+    margin-top: 7px;
+    color: #fff;
+    caret-color: #fff;
+}
+.menu #navegacion #boton-lupa{
+    position: relative;
+    height: 24px;
+    top: 8px;
+    left: -335px;
+}
+.menu #navegacion #buscador::placeholder{
+    color: rgb(92, 93, 93);
+    font-size: 1.3em;
+    margin-top: 10px;
+}
+.menu #robloxRI{
+    margin-left: auto;
+    width: 205.344px;
+    height: 42px;
+    margin-right: 12px;
+}
+.menu #robloxRI #links-buttons{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    width: 205.344px;
+    height: 42px;
+    margin: 0;
+    padding: 0;
+}
+.menu #robloxRI #links-buttons .links-li{
+    display: flex;
+    align-items: center;
+}
+.menu #robloxRI #links-buttons .links-li .as{
+    text-decoration: none;
+    border-radius: 8px;
+    border: 1px solid;
+    color: #fff;
+}
+.menu #robloxRI #links-buttons #links-button1{
+    width: 83.156px;
+    height: 30px;
+    padding: 2px;
+}
+.menu #robloxRI #links-buttons #links-button1 #a1{
+    height: 16px;
+    width: 61.156px;
+    padding: 6px 9px;
+    background-color: #00b06f;
+    border-color: #00b06f;
+    font-weight: 550;
+    margin-top: 7px;
+}
+.menu #robloxRI #links-buttons #links-button2 #a2{
+    height: 16px;
+    width: 96.188px;
+    padding: 6px 9px;
+    font-size: 16px;
+    border-color: #bdbebe;
+    color: hsla(0, 0%, 100%, .7);
+    transform: scaleX(1);
+}
+#container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1000px;
+}
+#in{
+    width: 370px;
+    height: 444.609px;
+    padding: 15px;
+    margin-bottom: 18px;
+    background: #393b3d;
+    color: #fff;
+    position: relative;
+    top: 115px;
+    right: auto;
+    margin: 0 auto;
+}    
+#in h1 {
+    display: flex;
+    align-items: center;
+    font-weight: 800;
+    transform: scaleX(1);
+    word-wrap: break-word;
+    width: 370px;
+    height: 44.8px; /* Elimina la altura fija */
+    font-size: 1.8em;
+    text-align: center;
+    line-height: 2em; /* Reduce el espaciado */
+    margin: 0;
+    padding: 5px 0;
+    white-space: nowrap; /* Evita que "Roblox" pase a la siguiente línea */
+    font-family:"Builder Sans", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+#in #inputs{
+    width: 370px;
+    height: 148px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#in #inputs #input1{
+    width: 344px;
+    height: 26px;
+    padding: 5px 12px;
+    border-radius: 8px;
+    margin-bottom: 18px;
+    background-color: rgb(17, 18, 18);
+    border: none;
+    caret-color: #fff;
+    color: #fff;
+}
+#in #inputs #input1::placeholder{
+    font-size: 15px;
+}
+#in #inputs #input1:focus{
+    outline: 1px solid #bdbebe;
+}
+#in #inputs #input2{
+    width: 344px;
+    height: 26px;
+    padding: 5px 12px;
+    border-radius: 8px;
+    background-color: rgb(17, 18, 18);
+    border: none;
+    caret-color: #fff;
+    color: #fff;
+}
+#in #inputs #input2::placeholder{
+    font-size: 15px;
+
+}
+#in #inputs #input2:focus{
+    outline: 1px solid #bdbebe;
+}
+#in #inputs #ins{
+    width: 370px;
+    height: 36px;
+    padding: 9px;
+    border: 1px;
+    margin: 6px 0px 12px 0px;
+    border-radius: 8px;
+    color: hsla(0, 0%, 100%, .7);
+    background: transparent;
+    border: #bdbebe solid 1px;
+    font-weight: 500;
+    font-size: 16px;
+}
+#in #inputs #ins:hover{
+    color: #fff;
+    border-color: #fff;
+    cursor: pointer;
+}
+#texto{
+    width: 370px;
+    height: 22.41px;
+    margin-top: 12px;
+}
+#texto a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+#texto a:hover{
+    text-decoration: underline;
+}
+#botones{
+    width: 370px;
+    height: 138px;
+    display: flex;
+    flex-direction: column;
+    
+}
+#botones #c-linea-divisora{
+    margin-bottom: 6px;
+}
+#botones #c-linea-divisora #linea-divisora{
+    border-top: solid;
+    border: 1px #fff;
+    margin-top: 24px;
+    background-color: #fff;
+    height: 1px;   
+}
+#botones #boton1{
+    width: 370px;
+    height: 36px;
+    padding: 9px;
+    border: 1px;
+    margin: 12px 0px 6px 0px;
+    border-radius: 8px;
+    color: hsla(0, 0%, 100%, .7);
+    background: transparent;
+    border: #bdbebe solid 1px;
+    font-weight: 500;
+    font-size: 16px;
+}
+#botones #boton1:hover{
+    color: #fff;
+    border-color: #fff;
+    cursor: pointer;
+}
+#botones #boton2{
+    width: 370px;
+    height: 36px;
+    padding: 9px;
+    border: 1px;
+    margin: 6px 0px 10px 0px;
+    border-radius: 8px;
+    color: hsla(0, 0%, 100%, .7);
+    background: transparent;
+    border: #bdbebe solid 1px;
+    font-weight: 500;
+    font-size: 16px;
+}
+#botones #boton2:hover{
+    color: #fff;
+    border-color: #fff;
+    cursor: pointer;
+}
+#ntcdr{
+    margin: 24px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#ntcdr p{
+    margin: 0;
+    margin-right: 5px;
+}
+#ntcdr a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 200;
+}
+#ntcdr a:hover{
+    text-decoration: underline;
+}
