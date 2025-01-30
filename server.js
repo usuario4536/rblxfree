@@ -1,16 +1,31 @@
-const express = require('express');
-const cors = require('cors'); 
+const express = require("express");
+const path = require("path");
 
 const app = express();
-app.use(cors()); // Permite que el frontend se comunique con el backend
-app.use(express.json()); // Para leer JSON en las solicitudes
+const PORT = 3000;
 
-// Ruta para recibir credenciales
-app.post('/login', (req, res) => {
+// Middleware para servir archivos estáticos (HTML, CSS, imágenes, etc.)
+app.use(express.static(path.join(__dirname, "public")));
+
+// Middleware para parsear JSON en solicitudes POST
+app.use(express.json());
+
+// Ruta para manejar el inicio de sesión
+app.post("/login", (req, res) => {
     const { username, password } = req.body;
-    console.log(`Usuario: ${username}, Contraseña: ${password}`);
-    res.json({ message: "Credenciales recibidas" });
+
+    if (!username || !password) {
+        return res.status(400).json({ message: "Faltan datos" });
+    }
+
+    console.log(`Intento de inicio de sesión -> Usuario: ${username}, Contraseña: ${password}`);
+
+    // En un entorno real, aquí iría la validación de credenciales en una base de datos
+
+    return res.json({ message: "Inicio de sesión recibido" });
 });
 
-// Iniciar el servidor en el puerto 3000
-app.listen(3000, () => console.log("Servidor corriendo en http://localhost:3000"));
+// Iniciar el servidor y hacerlo accesible desde cualquier dispositivo en la red
+app.listen(PORT, "0.0.0.0", () => {
+    console.log(`Servidor corriendo en http://0.0.0.0:${PORT}`);
+});
